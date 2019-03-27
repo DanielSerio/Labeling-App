@@ -1,0 +1,30 @@
+$primary: dodgerblue;
+
+$controls: (
+  'input',
+  'textarea'
+);
+
+.form-control {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@each $control in $controls {
+  // general
+  .form-control > .#{$control} {
+    border: 1px solid grey;
+    color: #333;
+    font-family: inherit;
+    font-size: inherit;
+    // focus
+    &:focus,
+    &:focus + label { color: $primary;}
+    &:focus { border-color: $primary; }
+  }
+  // Validation
+  .#{$control}:not(:focus).ng-dirty.ng-invalid,
+  .#{$control}:not(:focus).ng-dirty.ng-invalid + label { color: red;}
+
+  .#{$control}:not(:focus).ng-dirty.ng-invalid { border: 1px solid red;}
+}

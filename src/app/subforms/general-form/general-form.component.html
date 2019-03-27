@@ -1,0 +1,10 @@
+<form [formGroup]="generalForm" class="form">
+  <div class="form-row">
+    <div class="form-group">
+      <app-basic-input [control]="generalForm.controls['specName']" label="Spec Name" placeholder="XX-LS-0001"></app-basic-input>
+    </div>
+  </div>
+  <div class="form-row">
+    <app-textarea [control]="generalForm.controls['specDesc']" label="Spec Description"></app-textarea>
+  </div>
+</form>

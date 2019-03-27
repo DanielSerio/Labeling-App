@@ -1,0 +1,4 @@
+<div class="form-control">
+  <textarea [id]="label | controlId:'input'" [formControl]="control" [attr.placeholder]="placeholder ? placeholder : null" class="textarea"></textarea>
+  <label [for]="label | controlId:'input'">{{label}}</label>
+</div>
