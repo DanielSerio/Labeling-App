@@ -9,6 +9,8 @@ import { LabelSpecificationFormComponent } from './pages/label-specification-for
 import { GeneralFormComponent } from './subforms/general-form/general-form.component';
 import { TextareaComponent } from './controls/textarea/textarea.component';
 import { ControlIdPipe } from './controls/pipes/control-id.pipe';
+import { CheckboxComponent } from './controls/checkbox/checkbox.component';
+import { SterilityFormComponent } from './subforms/sterility-form/sterility-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ControlIdPipe } from './controls/pipes/control-id.pipe';
     LabelSpecificationFormComponent,
     GeneralFormComponent,
     TextareaComponent,
-    ControlIdPipe
+    ControlIdPipe,
+    CheckboxComponent,
+    SterilityFormComponent
   ],
   imports: [
     BrowserModule,
